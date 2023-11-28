@@ -1,0 +1,3 @@
+(int) test_method_id () method_id {
+  return (1);
+}

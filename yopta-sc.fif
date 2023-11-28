@@ -1,0 +1,47 @@
+// automatically generated from `yopta-sc.fc` 
+86439 DECLMETHOD test_yopta_lexer
+test_yopta_lexer PROC:<{
+  0 PUSHINT
+  s0 s0 PUSH2
+  WHILE:<{
+    s2 PUSH
+    10 LESSINT
+  }>DO<{
+    s3 s2 s1 PUSH3
+    s3 PUSH
+    c4 PUSH
+    c5 PUSH
+    c7 PUSH
+    <{
+      2DROP
+      SWAP
+      INC
+    }>CONT
+    c7 SETCONT
+    c5 SETCONT
+    c4 SETCONT
+    4 PUSHINT
+    -1 PUSHINT
+    SETCONTVARARGS
+    <{
+      s2 PUSH
+      8 EQINT
+      IF:<{
+        12 PUSHPOW2DEC
+        THROWANY
+      }>ELSE<{
+        INC
+      }>
+      SWAP
+    }>CONT
+    c1 PUSH
+    COMPOSALT
+    SWAP
+    TRY
+    s0 s2 XCHG
+    INC
+    -ROT
+  }>
+  s2 POP
+  s0 s2 XCHG
+}>

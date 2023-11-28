@@ -1,0 +1,60 @@
+;;  sym::symbols.add_keyword("zabery", Kw::_Return)
+;;      .add_keyword("var", Kw::_Var)
+;;      .add_keyword("repeat", Kw::_Repeat)
+;;      .add_keyword("do", Kw::_Do)
+;;      .add_keyword("pognali", Kw::_While)
+;;      .add_keyword("until", Kw::_Until)
+;;      .add_keyword("ebanet?", Kw::_Try)
+;;      .add_keyword("pizdec", Kw::_Catch)
+;;      .add_keyword("zabazarotvetish", Kw::_If)
+;;      .add_keyword("ifnot", Kw::_Ifnot)
+;;      .add_keyword("then", Kw::_Then)
+;;      .add_keyword("komupizdish", Kw::_Else)
+;;      .add_keyword("elseif", Kw::_Elseif)
+;;      .add_keyword("elseifnot", Kw::_Elseifnot);
+;;
+;;  sym::symbols.add_keyword("int", Kw::_Int)
+;;      .add_keyword("kletka", Kw::_Cell)
+;;      .add_keyword("slice", Kw::_Slice)
+;;      .add_keyword("builder", Kw::_Builder)
+;;      .add_keyword("huent", Kw::_Cont)
+;;      .add_keyword("array", Kw::_Tuple)
+;;      .add_keyword("type", Kw::_Type)
+;;      .add_keyword("->", Kw::_Mapsto)
+;;      .add_keyword("forall", Kw::_Forall);
+;;
+;;  sym::symbols.add_keyword("extern", Kw::_Extern)
+;;      .add_keyword("global", Kw::_Global)
+;;      .add_keyword("asm", Kw::_Asm)
+;;      .add_keyword("impure", Kw::_Impure)
+;;      .add_keyword("inline", Kw::_Inline)
+;;      .add_keyword("inline_ref", Kw::_InlineRef)
+;;      .add_keyword("auto_apply", Kw::_AutoApply)
+;;      .add_keyword("fuck_id", Kw::_MethodId)
+;;      .add_keyword("operator", Kw::_Operator)
+;;      .add_keyword("infix", Kw::_Infix)
+;;      .add_keyword("infixl", Kw::_Infixl)
+;;      .add_keyword("infixr", Kw::_Infixr)
+;;      .add_keyword("putin", Kw::_Const);
+
+(int, int, kletka) test_yopta_lexer (kletka cell) fuck_id {
+  int i = 0;
+  int j = 0; 
+  int k = 0; 
+
+  pognali (i < 10){
+    ebanet? {
+      zabazarotvetish (i == 8) {
+        throw(0xfff);
+      } komupizdish {
+        k = k + 1;
+      }
+    } pizdec (_, _) {
+      j = j + 1;
+    }
+
+    i = i + 1;
+  }
+
+  zabery (j, k, cell);
+}

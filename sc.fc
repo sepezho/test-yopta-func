@@ -1,0 +1,43 @@
+;;(int, int, kletka, int) test_yopta_lexer () fuck_id {
+;;  int i = 0;
+;;  int j = 0; 
+;;  int k = 0; 
+;;
+;;  putin int z = 69;
+;;
+;;  pognali (i < 10){
+;;    ebanet? {
+;;      zabazarotvetish (i == 8) {
+;;        throw();
+;;      } komupizdish {
+;;        k++;
+;;      }
+;;    } pidec {
+;;      j++;
+;;    }
+;;
+;;    i++;
+;;  }
+;;
+;;  zabery (j, k, begin_cell().end_cell(), z);
+;;}
+
+(int, int, cell) test (cell kletka) method_id {
+  int i = 0;
+  int j = 0;
+  int k = 0;
+
+  while (i < 10) {
+    try {
+      if (i == 8) {
+        throw(0xfff);
+      } else {
+        k = k + 1;
+      }
+    } catch (_, _) {
+      j = j + 1;
+    }
+    i = i + 1;
+  }
+  return (j, k, kletka);
+}

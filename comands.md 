@@ -1,0 +1,3 @@
+../ton-build/crypto/func -o
+func
+rm -rf * ; cmake ../ton ; cmake --build . --target func

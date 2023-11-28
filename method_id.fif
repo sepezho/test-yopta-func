@@ -1,0 +1,5 @@
+// automatically generated from `method_id.fc` 
+70935 DECLMETHOD test_method_id
+test_method_id PROC:<{
+  1 PUSHINT
+}>
